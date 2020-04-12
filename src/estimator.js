@@ -1,9 +1,9 @@
-const covid19ImpactEstimator = (data) => {
+const covid19ImpactEstimator = () => {
   data = {
     region: {
-    avgAge: 19.7,
-    avgDailyIncomeInUSD: 5,
-    avgDailyIncomePopulation: 0.71
+      avgAge: 19.7,
+      avgDailyIncomeInUSD: 5,
+      avgDailyIncomePopulation: 0.71
     },
     periodType: 'days',
     timeToElapse: 58,
