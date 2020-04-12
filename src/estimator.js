@@ -10,6 +10,7 @@ const pandemicData = {
   population: 66622705,
   totalHospitalBeds: 1380614
 };
+const impact = (data, num) => data.reportedCases * num;
 const covid19ImpactEstimator = (data) => {
   const output = {
     data,
@@ -17,7 +18,7 @@ const covid19ImpactEstimator = (data) => {
       impact: {},
       severeImpact: {}
     }
-  }
+  };
 };
 
 export default covid19ImpactEstimator;
