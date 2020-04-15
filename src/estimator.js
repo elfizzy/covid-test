@@ -1,3 +1,5 @@
+// export default covid19ImpactEstimator;
+
 const pandemicData = {
   region: {
     avgAge: 19.7,
@@ -10,7 +12,11 @@ const pandemicData = {
   population: 66622705,
   totalHospitalBeds: 1380614
 };
-const impact = (data, num) => data.reportedCases * num;
+
+const infected = pandemicData.reportedCases * 10;
+const severlyInfected = pandemicData.reportedCases * 50;
+
+// eslint-disable-next-line no-unused-vars
 const covid19ImpactEstimator = (data) => {
   const output = {
     data,
@@ -19,6 +25,6 @@ const covid19ImpactEstimator = (data) => {
       severeImpact: {}
     }
   };
+  output.estimate.impact.currentlyInfected = infected;
+  output.estimate.severeImpact.currentlyInfected = severlyInfected;
 };
-
-export default covid19ImpactEstimator;
